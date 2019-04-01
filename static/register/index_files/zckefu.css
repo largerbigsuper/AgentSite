@@ -1,0 +1,180 @@
+﻿BODY {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px;
+	/*height:3000px;*/
+}
+H1 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H2 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H3 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H4 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H5 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H6 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+HR {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+
+DL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DT {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DD {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+OL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+LI {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+BODY {
+	FONT: 12px/1.5 "宋体"; BACKGROUND: #fff; COLOR: #666
+}
+H1 {
+	FONT-SIZE: 100%
+}
+H2 {
+	FONT-SIZE: 100%
+}
+H3 {
+	FONT-SIZE: 100%
+}
+H4 {
+	FONT-SIZE: 100%
+}
+H5 {
+	FONT-SIZE: 100%
+}
+H6 {
+	FONT-SIZE: 100%
+}
+ADDRESS {
+	FONT-STYLE: normal
+}
+EM {
+	FONT-STYLE: normal
+}
+UL {
+	LIST-STYLE-TYPE: none
+}
+OL {
+	LIST-STYLE-TYPE: none
+}
+A {
+	COLOR: #666; TEXT-DECORATION: none
+}
+/*A:hover {
+	TEXT-DECORATION: underline
+}*/
+
+
+
+.float0831{float:right; position:fixed; right:1px;
+bottom:20px;
+_position:absolute;
+_bottom:auto;
+_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
+_margin-bottom:15px;}
+.float0831 .floatL {
+	POSITION: relative; WIDTH: 28px; FLOAT: left
+}
+.float0831 .floatL A {
+	TEXT-INDENT: -9999px; DISPLAY: block; FONT-SIZE: 0px
+}
+.float0831 .btnOpen {
+	BACKGROUND: url(../images/kefu/float_s.gif) no-repeat
+}
+.float0831 .btnOpen {
+	POSITION: relative; WIDTH: 28px; HEIGHT: 118px; 
+}
+
+.float0831 .btnCtn {
+	POSITION: relative; WIDTH: 28px; HEIGHT: 118px; 
+}
+.float0831 .btnOpen {
+	 LEFT: 1px;bottom:80px;
+_position:absolute;
+_bottom:80px;
+
+_margin-bottom:15px;
+}
+
+.float0831 .btnCtn {
+	TOP: 72px; LEFT: 2px
+}
+.float0831 .btnOpen {
+	BACKGROUND-POSITION: -30px -396px
+}
+
+ .btnCtn {
+	BACKGROUND:url(../images/kefu/01.gif) no-repeat;
+}
+
+.float0831 A {
+	COLOR: #00a0e9
+}
+.float0831 A:hover {
+	COLOR: #ff8100; TEXT-DECORATION: none
+}
+.float0831 .floatL {
+	POSITION: relative; WIDTH: 28px; FLOAT: left
+}
+.float0831 .floatL A {
+	TEXT-INDENT: -9999px; DISPLAY: block; FONT-SIZE: 0px
+}
+
+.floatR {
+	BACKGROUND: url(../images/kefu/float_bg.gif)
+}
+.floatR {
+	WIDTH: 130px; BACKGROUND-REPEAT: repeat-y; BACKGROUND-POSITION: -262px bottom; FLOAT: left;height:264px; OVERFLOW: hidden
+}
+.floattp {
+	BACKGROUND: url(../images/kefu/float_bg.gif)
+}
+.floattp {
+	BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: 0px 0px; HEIGHT: 10px;width:130px;
+}
+ .titZx {
+	BACKGROUND: url(../images/kefu/float_s.gif) no-repeat
+}
+ .titZx {
+	BACKGROUND-POSITION: 10px -15px; height:42px;
+}
+.icoTc {
+	BACKGROUND: url(../images/kefu/qqs_1.gif) 0px 10px no-repeat; display:inline-block;float:left; clear:both; height:30px; padding-left:30px; line-height:42px;width:90px;margin-left:10px;}
+.floatcn{float:left;clear:both;}
+.floatcn li{BORDER-BOTTOM: #e6e5e4 1px solid; LINE-HEIGHT: 36px; WORD-WRAP: break-word; HEIGHT: 36px; OVERFLOW: hidden; WORD-BREAK: normal;float:left;clear:both;width:105px; margin-left:10px!important;margin-left:5px;}
+.webZx {
+	 WIDTH: 164px;  BACKGROUND: url(../images/kefu/webZx_bg.jpg) no-repeat; HEIGHT: 70px; float:Left;
+}
+.webZx-in {
+	 PADDING-LEFT: 5px; HEIGHT: 40px; margin-TOP: 10px;overflow:hidden;
+}
+.titDh {
+	BACKGROUND: url(../images/kefu/float_s.gif) no-repeat
+}
+ .titDh {
+	BACKGROUND-POSITION: 20px -80px; height:20px;overflow:hidden;float:left; clear:both;width:130px;margin-top:20px;
+}
+ .floatbtom{
+	BACKGROUND: url(../images/kefu/float_bg.gif)
+}
+.floatbtom{
+	height:50px; WIDTH: 130px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: -131px top; FLOAT: left; OVERFLOW: hidden;clear:both;
+}
