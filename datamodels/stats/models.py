@@ -32,6 +32,7 @@ class Applay(models.Model):
     name = models.CharField(max_length=20, verbose_name='姓名')
     tel = models.CharField(max_length=11, verbose_name='电话号码')
     create_at = models.DateTimeField(auto_now_add=True, verbose_name='创建时间')
+    is_deal = models.BooleanField(default=False, verbose_name='已处理')
 
     objects = ApplayManager()
 

@@ -20,7 +20,7 @@ class ApplayCreateSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Applay
-        fields = ('item', 'remark', 'name', 'tel', 'create_at')
+        fields = ('item', 'remark', 'name', 'tel', 'create_at', 'is_deal')
 
 
 class ApplayListSerializer(serializers.ModelSerializer):
@@ -28,5 +28,5 @@ class ApplayListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Applay
-        fields = ('item', 'remark', 'name', 'tel', 'create_at')
+        fields = ('item', 'remark', 'name', 'tel', 'create_at', 'is_deal')
 
