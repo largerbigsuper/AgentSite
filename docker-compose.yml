@@ -1,0 +1,67 @@
+version: '3'
+services:
+  service-web:
+    build: .
+    command: ["./run_web.sh"]
+    volumes:
+      - service-web-agent:/code
+    links:
+      - service-db
+      - service-redis
+    depends_on:
+      - service-db
+      - service-redis
+    stdin_open: true
+    tty: true
+    environment:
+      - DJANGO_RUN_ENV=PRODUCTION
+
+  service-db:
+    image: mysql:5.7
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - service-db-agent:/var/lib/mysql
+    expose:
+      - "3306"
+    environment:
+      - MYSQL_DATABASE=web_db
+      - MYSQL_ROOT_PASSWORD=web_db_password
+
+  service-redis:
+    image: redis:5.0
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+#
+#  celery:
+#    build: .
+#    command: celery -A LV worker -l info -f log/celery.log
+#    volumes:
+#      - service-web-agent:/code
+#    depends_on:
+#      - db
+#      - redis
+#  celery-beat:
+#    build: .
+#    command: celery -A LV beat -l info -f log/celery_beat.log
+#    volumes:
+#      - service-web-agent:/code
+#    depends_on:
+#      - db
+#      - redis
+
+  service-nginx:
+    restart: always
+    depends_on:
+      - service-web
+    build:
+      context: docker/nginx
+      dockerfile: Dockerfile-production
+    ports:
+      - "8080:8080"
+    volumes:
+      - service-web-agent:/code
+
+volumes:
+  service-web-agent:
+  service-db-agent:
+
