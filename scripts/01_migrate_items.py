@@ -348,5 +348,5 @@ def migrate_db():
 
 
 def run():
-    truncate_table()
+    # truncate_table()
     migrate_db()
