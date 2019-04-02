@@ -137,3 +137,26 @@ a:focus {outline:none;-moz-outline:none;}
 
 
 .zs_menu #vip{background:#e55015;}
+
+#imgValidCode{
+    font-family:Arial;
+    font-style:italic;
+    font-weight:bold;
+    border:0;
+    letter-spacing:2px;
+    color:blue;
+}
+
+.title-type-font{
+    background: -webkit-linear-gradient(#2097d4, rgba(38, 173, 227, 0.64)); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#2097d4, rgba(38, 173, 227, 0.64)); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#2097d4, rgba(38, 173, 227, 0.64)); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#2097d4, rgba(38, 173, 227, 0.64)); /* 标准的语法 */
+    color:#fff;
+    width: 600px;
+    font-size: 30px;
+    padding:10px 20px;
+    font-weight: 600;
+    font-family: "American Typewriter";
+    border-radius: 5px;
+}

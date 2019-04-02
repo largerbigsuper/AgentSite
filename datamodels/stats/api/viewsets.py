@@ -52,7 +52,6 @@ class ItemViewSet(mixins.ListModelMixin,
         return Response(data)
 
 
-
 class AppalyViewSet(viewsets.ModelViewSet):
 
     queryset = mm_Applay.all()

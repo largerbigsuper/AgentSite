@@ -24,6 +24,7 @@ from datamodels.stats import views
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('detail/', views.detail, name='detail'),
     path('admin/', admin.site.urls),
     path('api/', include(agent_router.urls)),
 ]

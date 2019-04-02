@@ -7,20 +7,22 @@ document.writeln("            </p>");
 document.writeln("            <p id=\"p_ybfood2\" class=\"xx_footspanpa\">浙B2-20080280号 Copyright © 2015 zhonghesoft.com. All Rights Reserved 版权所有：杭州筑业软件有限公司</p>");
 document.writeln("            <p>");
 document.writeln("                <a href=\"http://www.pingpinganan.gov.cn/\" target=\"_blank\" title=\"网络警察 报警平台\">");
-document.writeln("                    <img src=\"/images/61_10.gif\" width=\"109\" height=\"47\" alt=\"网络警察 报警平台\">");
+document.writeln("                    <img src=\"../images/61_10.gif\" width=\"109\" height=\"47\" alt=\"网络警察" +
+    " 报警平台\">");
 document.writeln("                </a>");
 document.writeln("                <a href=\"http://www.pingpinganan.gov.cn/\" target=\"_blank\" title=\"公共信息安全网络监察\">");
-document.writeln("                    <img src=\"/images/61_11.gif\" width=\"109\" height=\"47\" alt=\"公共信息安全网络监察\">");
+document.writeln("                    <img src=\"../images/61_11.gif\" width=\"109\" height=\"47\"" +
+    " alt=\"公共信息安全网络监察\">");
 document.writeln("                </a>");
 document.writeln("                <a href=\"http://net.china.com.cn/index.htm\" target=\"_blank\" title=\"不良信息举报中心\">");
-document.writeln("                    <img src=\"/images/61_12.gif\" width=\"109\" height=\"47\" alt=\"不良信息举报中心\">");
+document.writeln("                    <img src=\"../images/61_12.gif\" width=\"109\" height=\"47\" alt=\"不良信息举报中心\">");
 document.writeln("                </a>");
 document.writeln("            </p>");
 document.writeln("        </div>");
 document.writeln("    </div>");
 document.writeln("</div>");
 if (location.href.indexOf('/zzdb') > -1)
-{  
+{
     document.writeln("<script src=\"/js/zzdbkefu.js\" type=\"text/javascript\" charset=\"gb2312\"></script>");
 }
 else if (location.href.indexOf('/kzwy') > -1 || location.href.indexOf('/zzdb') > -1) {

@@ -48,7 +48,7 @@ qqnum[1043] = '2355728527';//卢老师
 //企业QQ
 qqnum[10000] = '800058360';
 var qqimg = [];
-qqimg[0] = "http://" + window.location.host + "/images/qq.gif";
+qqimg[0] =  "./images/qq.gif";
 qqimg[9] = "http://" + window.location.host + "/images/kefu/qqs_1.gif";
 
 //判断QQ的显示方式
@@ -102,7 +102,6 @@ function ShowQQHref(type, qqnum)//type=1,2,3...
 }
 
 //统计QQ方法
-document.writeln("<script src='http://dw.cbi360.net/js/AddClientButtonLog.js' language='JavaScript'></script>");
 function KeFuQQButton(qq) {
     var username;
     var coo = new HttpCookie("91ZhengShu");
