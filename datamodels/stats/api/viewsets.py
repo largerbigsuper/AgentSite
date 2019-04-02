@@ -14,6 +14,7 @@ from rest_framework.viewsets import GenericViewSet
 from datamodels.stats.api.filters import ItemFilter
 from datamodels.stats.api.serailizers import ApplayListSerializer, ApplayCreateSerializer, ItemSerailzier
 from datamodels.stats.models import mm_Applay, mm_Item
+from utils.common import CsrfExemptSessionAuthentication
 
 
 class ItemViewSet(mixins.ListModelMixin,
@@ -56,6 +57,7 @@ class AppalyViewSet(viewsets.ModelViewSet):
 
     queryset = mm_Applay.all()
     permission_classes = []
+    authentication_classes = (CsrfExemptSessionAuthentication,)
 
     def get_serializer_class(self):
         if self.request.method == 'GET':

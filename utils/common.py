@@ -8,6 +8,7 @@ from collections import OrderedDict
 
 from django.db.models import Manager
 from rest_framework import pagination
+from rest_framework.authentication import SessionAuthentication
 from rest_framework.response import Response
 
 
@@ -24,3 +25,9 @@ class CustomPagination(pagination.PageNumberPagination):
             ('page_count', self.page.paginator.num_pages),
             ('results', data)
         ]))
+
+
+class CsrfExemptSessionAuthentication(SessionAuthentication):
+
+    def enforce_csrf(self, request):
+        return
