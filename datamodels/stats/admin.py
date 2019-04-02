@@ -1,13 +1,15 @@
 from django.contrib import admin
+from mptt.admin import MPTTModelAdmin
 
 from datamodels.stats.models import Item, Applay
 
 
 @admin.register(Item)
-class ItemAdmin(admin.ModelAdmin):
+class ItemAdmin(MPTTModelAdmin):
+    pass
 
-    list_display = ('id', 'name')
-    list_display_links = list_display
+    # list_display = ('id', 'name')
+    # list_display_links = list_display
 
 
 @admin.register(Applay)

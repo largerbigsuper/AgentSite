@@ -1,4 +1,6 @@
 from django.db import models
+from mptt.fields import TreeForeignKey
+from mptt.models import MPTTModel
 
 from utils.common import AgentModelManger
 
@@ -7,11 +9,15 @@ class ItemManager(AgentModelManger):
     pass
 
 
-class Item(models.Model):
+class Item(MPTTModel):
 
     name = models.CharField(max_length=20, verbose_name='报考类型')
+    parent = TreeForeignKey('self', on_delete=models.CASCADE, null=True, blank=True, related_name='children')
 
     objects = ItemManager()
+
+    class MPTTMeta:
+        order_insertion_by = ['name']
 
     class Meta:
         db_table = 'z_items'

@@ -13,7 +13,7 @@ class ItemSerailzier(serializers.ModelSerializer):
 
     class Meta:
         model = Item
-        fields = ('id', 'name')
+        fields = ('id', 'name', 'level', 'parent_id')
 
 
 class ApplayCreateSerializer(serializers.ModelSerializer):

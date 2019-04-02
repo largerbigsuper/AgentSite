@@ -42,6 +42,9 @@ INSTALLED_APPS = [
 
 THIRD_PARTS_APPS = [
     'rest_framework',
+    'mptt',
+    'django_filters',
+    'django_extensions',
 ]
 
 CUSTOM_APPS = [
@@ -135,4 +138,5 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.SessionAuthentication',
     ),
+    'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend',),
 }
