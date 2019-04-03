@@ -224,8 +224,21 @@
 
 
     <script type="text/javascript">
+        function show_0831() {
+            document.getElementById('divFloatToolsView').style.display = "block";
+            document.getElementById('aFloatTools_Hide').style.display = "block";
+            document.getElementById('aFloatTools_Show').style.display = "none";
+        }
+        function hide_0831() {
+            document.getElementById('divFloatToolsView').style.display = "none";
+            document.getElementById('aFloatTools_Hide').style.display = "none";
+            document.getElementById('aFloatTools_Show').style.display = "block";
+        }
+    </script>
+
+
+    <script type="text/javascript">
         function getList() {
-            var url = location.host;
             $.ajax({
                 url: "http://agent.lhxq.top:8080/api/items/all",
                 type: "get",
@@ -244,14 +257,15 @@
                     })
                     var text = '';
                     data.forEach(function (item,index) {
-                        if(item.id == '1'){
+                        if(item.name == '技工证'){
                             var childtext = '';
 
 
                             item.childrens.forEach(function (child,childindex) {
                                 var gransontext = '';
                                 child.childrens.forEach(function (grandson) {
-                                    gransontext += '<li><a href="subindex.html" target="_blank" title="' +
+                                    gransontext += '<li><a href="subindex.html?id='+ item.id +
+                                        '" target="_blank" title="' +
                                         grandson.name + '"> ' + grandson.name + '</a></li>'
 
                                 })
