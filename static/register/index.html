@@ -227,7 +227,7 @@
         function getList() {
             var url = location.host;
             $.ajax({
-                url: "http://agent.lhxq.top:8080/api/items/",
+                url: "http://agent.lhxq.top:8080/api/items/all",
                 type: "get",
 //                success: function (res) {
 //                    console.log(data);
@@ -244,7 +244,7 @@
                     })
                     var text = '';
                     data.forEach(function (item,index) {
-                        if(item.name == '技工证'){
+                        if(item.id == '1'){
                             var childtext = '';
 
 
