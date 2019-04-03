@@ -1,8 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 
 def index(request):
-    return render(request, 'index.html')
+    return redirect('http://agent.lhxq.top:8080/static/register/index.html')
 
 
 def detail(request):
