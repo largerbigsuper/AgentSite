@@ -323,7 +323,7 @@
             var url = location.search;
             var id= url.split('=')[1];
             $.ajax({
-                url: "http://agent.lhxq.top:8080/api/items/",
+                url: "http://agent.lhxq.top:8080/api/items/all",
                 type: "get",
                 success:function (res) {
                     if(res.data){
