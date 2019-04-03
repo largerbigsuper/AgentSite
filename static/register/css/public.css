@@ -160,3 +160,16 @@ a:focus {outline:none;-moz-outline:none;}
     font-family: "American Typewriter";
     border-radius: 5px;
 }
+
+
+.company{
+    width: 80%;
+    padding:100px 10%;
+    background:url("../images/company.jpeg") left 50px top  /200px 200px no-repeat #f7fdf6;
+    font-size:60px;
+    font-family: "微软雅黑", "黑体", arial, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+    font-weight: 600;
+    text-align: right;
+    text-shadow:5px 2px 6px #999;
+    color:#000;
+}

@@ -1,49 +1,11 @@
 var qqnum = [];
 //证书代理QQ
-qqnum[1000] = '2355258079'; //贾凤珍
-qqnum[1001] = '2355258060'; //孙老师
-qqnum[1002] = '2396587213'; //钱老师
-qqnum[1003] = '2355728520';
-qqnum[1004] = '2355728529';
-qqnum[1005] = '2355258074'; //戴老师
-qqnum[1006] = '2355728521';
-qqnum[1007] = '2355728524'; //高老师
-qqnum[1008] = '2355728523';
-qqnum[1009] = '1357584753';
-qqnum[1010] = '2355728528';
-qqnum[1011] = '2103313178';
-qqnum[1012] = '2355728525';
-qqnum[1013] = '1138826013';
-qqnum[1014] = '2355728522';
-qqnum[1015] = '510485539';
-qqnum[1016] = '2355258064'; //分省联系QQ
-qqnum[1017] = '2355258078'; //exam培训机构列表QQ
-qqnum[1018] = '2355258075'; //职称刘老师
-qqnum[1019] = '2355258062'; //职称汪老师
-qqnum[1020] = '1036179508'; //招标1
-qqnum[1021] = '1036179508'; //招标2
-qqnum[1022] = '2215557413'; //www联系我们  vip小杨
-qqnum[1023] = '2355258071'; //vip小张
-qqnum[1024] = '200650360'; //vip
-qqnum[1025] = '1036179508'; //招投标客服
-qqnum[1026] = '1420428308'; //意见反馈客服
-qqnum[1027] = '917688619'; //施垚
-qqnum[1028] = '2355258070';//钱伟杰
-qqnum[1029] = '782422173';//小朱
-qqnum[1030] = '2355258056';//毛老师
-qqnum[1031] = '2355258068'; //周老师
-qqnum[1032] = '2355258073';//王老师
-qqnum[1033] = '2355258069';//段老师
-qqnum[1034] = '2355258076';//张老师
-qqnum[1035] = '2355258081';//曹老师
-qqnum[1036] = '2355918161';//段老师
-qqnum[1037] = '2355918160';//王老师
-qqnum[1038] = '2355258063';//吴老师
-qqnum[1039] = '2355728526';//吴老师
-qqnum[1040] = '2881634724';//洪老师
-qqnum[1041] = '2355728523';//
-qqnum[1042] = '2355258067';//段老师
-qqnum[1043] = '2355728527';//卢老师
+qqnum[1000] = '307281614'; //贾凤珍
+qqnum[1001] = '307281614'; //孙老师
+qqnum[1002] = '307281614'; //钱老师
+qqnum[1003] = '307281614';
+qqnum[1004] = '307281614';
+qqnum[1005] = '307281614'; //戴老师
 
 //企业QQ
 qqnum[10000] = '800058360';
@@ -101,41 +63,44 @@ function ShowQQHref(type, qqnum)//type=1,2,3...
     }
 }
 
-//统计QQ方法
+// //统计QQ方法
 function KeFuQQButton(qq) {
-    var username;
-    var coo = new HttpCookie("91ZhengShu");
-    if (coo.isExisted() != false) {
-        username = decodeURI(coo.values.getValues("UserAccount"));
-    }
-    else {
-        username = "";
-    }
-    ButtonLog(3, username, qq);
+    return qq;
+    // var username;
+    // var coo = new HttpCookie("91ZhengShu");
+    // if (coo.isExisted() != false) {
+    //     username = decodeURI(coo.values.getValues("UserAccount"));
+    // }
+    // else {
+    //     username = "";
+    // }
+    // ButtonLog(3, username, qq);
 }
 
 function KeFuSysButton() {
-    var username;
-    var coo = new HttpCookie("91ZhengShu");
-    if (coo.isExisted() != false) {
-        username = decodeURI(coo.values.getValues("UserAccount"));
-    }
-    else {
-        username = "";
-    }
-    ButtonLog(4, username);
-    window.open("http://cssystem.cbi360.net/Index.aspx?comeurl=" + document.URL);
+    return true;
+    // var username;
+    // var coo = new HttpCookie("91ZhengShu");
+    // if (coo.isExisted() != false) {
+    //     username = decodeURI(coo.values.getValues("UserAccount"));
+    // }
+    // else {
+    //     username = "";
+    // }
+    // ButtonLog(4, username);
+    // window.open("http://cssystem.cbi360.net/Index.aspx?comeurl=" + document.URL);
 }
 
 function HHBSysButton() {
-    var username;
-    var coo = new HttpCookie("91ZhengShu");
-    if (coo.isExisted() != false) {
-        username = decodeURI(coo.values.getValues("UserAccount"));
-    }
-    else {
-        username = "";
-    }
-    ButtonLog(4, username);
-    window.open("http://cssystem.cbi360.net/Linking.aspx?fp=1&comeurl=" + document.URL);
+    return true;
+    // var username;
+    // var coo = new HttpCookie("91ZhengShu");
+    // if (coo.isExisted() != false) {
+    //     username = decodeURI(coo.values.getValues("UserAccount"));
+    // }
+    // else {
+    //     username = "";
+    // }
+    // ButtonLog(4, username);
+    // window.open("http://cssystem.cbi360.net/Linking.aspx?fp=1&comeurl=" + document.URL);
 }
