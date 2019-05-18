@@ -3,6 +3,9 @@ services:
   service-web:
     build: .
     command: ["./run_web.sh"]
+    ports:
+      - "8080:8000"
+      - "7001:8000"
     volumes:
       - .:/code
     links:
@@ -48,18 +51,18 @@ services:
 #    depends_on:
 #      - db
 #      - redis
-
-  service-nginx:
-    restart: always
-    depends_on:
-      - service-web
-    build:
-      context: docker/nginx
-      dockerfile: Dockerfile-production
-    ports:
-      - "8080:8080"
-    volumes:
-      - .:/code
+#
+#  service-nginx:
+#    restart: always
+#    depends_on:
+#      - service-web
+#    build:
+#      context: docker/nginx
+#      dockerfile: Dockerfile-production
+#    ports:
+#      - "8080:8080"
+#    volumes:
+#      - .:/code
 
 volumes:
   service-db-agent:
